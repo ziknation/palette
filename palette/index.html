@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header_wrapper">
+      <div class="drop_down_menu">
+        <div class="drop_down_menu--menu">
+          <img src="assets/images/menu.png" alt="menu">
+        </div>
+        <div class="drop_down_menu--text">
+          CodeJam - Pallete
+        </div>
+      </div>
+      <div class="dots">
+        <img src="assets/images/dots.png" alt="dots">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main_wrapper">
+      <div class="panels">
+        <div class="panels--instruments">
+          <ul>
+            <li class="panels--instruments-li bucketTool">
+              <img src="assets/images/fill.svg" alt="fill">
+              <p class="li_p">Paint bucket (press b)</p>
+            </li>
+            <li class="panels--instruments-li pipetTool">
+              <img src="assets/images/pipette.svg" alt="pipette">
+              <p class="li_p">Choose color (press c)</p>
+            </li>
+            <li class="panels--instruments-li penTool selected">
+              <img src="assets/images/pen.svg" alt="pen">
+              <p class="li_p">Pen (press p)</p>
+            </li>
+            <li class="panels--instruments-li">
+              <img src="assets/images/change.svg" alt="change">
+              <p class="li_p">Transform</p>
+            </li>
+          </ul>
+        </div>
+        <div class="panels--colors">
+          <ul>
+            <li class="panels--instruments-li">
+              <input type="color" id="current" name="current" value="#c4c4c4">
+              <label for="current">Current color</label>
+            </li>
+            <li class="panels--instruments-li prev">
+              <div class="colors_div green circle_prev"></div>
+              <p class="li_p">Prev color</p>
+            </li>
+            <li class="panels--instruments-li">
+              <div class="colors_div red"></div>
+              <p class="li_p">red</p>
+            </li>
+            <li class="panels--instruments-li">
+              <div class="colors_div blue"></div>
+              <p class="li_p">blue</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="canvas">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="size">
+        <button value="4" class="selected">4x4</button><br>
+        <button value="16">16x16</button><br>
+        <button value="32">32x32</button><br>
+        <button value="64">64x64</button>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
